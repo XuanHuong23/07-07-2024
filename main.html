@@ -12,6 +12,10 @@
     <script>
         function numberCheck() {
             let number = Number(prompt("Nhập một số : "))
+            if (number === "") {
+                document.write("Xin vui lòng nhập dữ liệu")
+                return
+            }
             if (number % 2 == 0) {
                 document.write("Đây là số chẵn")
             } else {
