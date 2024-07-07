@@ -7,14 +7,15 @@
     <title>Bai tap</title>
 </head>
 
-<body>Bai tap</h1>
+<body>
+    <h1>Bai tap</h1><br>
     <script>
         function numberCheck() {
-            let number = window.prompt("Nhập một số : ")
+            let number = Number(prompt("Nhập một số : "))
             if (number % 2 == 0) {
-                alert("Đây là số chẵn")
+                document.write("Đây là số chẵn")
             } else {
-                alert("Đây là số lẽ")
+                document.write("Đây là số lẽ")
             }
         }
         numberCheck()
